@@ -21,7 +21,7 @@
           </span>
 
           <div class="text logo-text">
-            <span class="name">Immobilia</span>
+            <span class="name">Immobilia<i class='bx bxs-bar-chart-alt-2'></i></span>
             <!-- <span class="profession">Application de gestion des biens immobiliés</span> -->
           </div>
         </div>
@@ -76,7 +76,7 @@
         <h1>Immobilia<i class='bx bxs-bar-chart-alt-2'></i></h1>
         <p>Ventes immobilières réalisées par l'Etat entre 2013 et 2017</p>
       </div>
-      <main style="display:flex; align-items:center; flex-direction: column;">
+      <main style="display:flex; align-items:center; flex-direction: column; margin-bottom:20px;">
         <p style=" text-align: center; width: 50%;">
           Immobilia est une plateforme recensant les ventes de bien immobilier
           de l’état Français de 2013 à 2017. Vous pourrez trouver organisé par
@@ -92,26 +92,6 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.js"></script>
     <script src="script.js"></script>
-    <script>
-      const body = document.querySelector("body"),
-        sidebar = body.querySelector("nav"),
-        toggle = body.querySelector(".toggle"),
-        modeSwitch = body.querySelector(".toggle-switch"),
-        modeText = body.querySelector(".mode-text");
-
-      toggle.addEventListener("click", () => {
-        sidebar.classList.toggle("close");
-      });
-
-      modeSwitch.addEventListener("click", () => {
-        body.classList.toggle("dark");
-
-        if (body.classList.contains("dark")) {
-          modeText.innerText = "Light mode";
-        } else {
-          modeText.innerText = "Dark mode";
-        }
-      });
-    </script>
+  
   </body>
 </html>

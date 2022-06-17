@@ -45,8 +45,13 @@ body.dark{
     z-index: 100;
     grid-area: nav;  
 }
+
 .sidebar.close{
-    width: 88px;
+    width: 70px;
+}
+
+.sidebar.close:hover{
+    width: 250px;
 }
 
 /* ===== Reusable code - Here ===== */
@@ -84,10 +89,10 @@ body.dark{
     font-size: 17px;
     font-weight: 500;
     white-space: nowrap;
-    opacity: 1;
-}
-.sidebar.close .text{
     opacity: 0;
+}
+.sidebar.close:hover .text{
+    opacity: 1;
 }
 /* =========================== */
 
